@@ -1,1 +1,0 @@
-# next-typescript-mui-boilerplate
