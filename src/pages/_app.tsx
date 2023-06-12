@@ -12,8 +12,9 @@ import { Router } from "next/router";
 import { appWithTranslation } from "next-i18next";
 import nProgress from "nprogress";
 import { Provider } from "react-redux";
+import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
-import { persistor, store } from "store";
+import { store } from "store";
 import createEmotionCache from "utils/createEmotionCache";
 
 // Client-side cache, shared for the whole session of the user in the browser.
@@ -29,6 +30,7 @@ Router.events.on("routeChangeComplete", nProgress.done);
 
 function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+  const persistor = persistStore(store);
 
   return (
     <CacheProvider value={emotionCache}>

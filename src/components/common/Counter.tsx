@@ -1,17 +1,11 @@
 import { Button, ButtonGroup, Stack, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { appSlice } from "slices/app.slice";
 import type { RootState } from "store";
 
 export function Counter() {
-  const [count, setCount] = useState(0);
-  const value = useSelector((state: RootState) => state.app.value);
+  const count = useSelector((state: RootState) => state.app.value);
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    setCount(value);
-  }, [value]);
 
   return (
     <Stack gap={2}>
