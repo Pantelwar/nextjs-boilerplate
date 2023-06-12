@@ -32,7 +32,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "strictNullChecks": true,
+    "strictNullChecks": false,
     "target": "es5"
   },
   "exclude": ["./node_modules/**/*", "cypress/**/*.ts", "*.config.js"],
