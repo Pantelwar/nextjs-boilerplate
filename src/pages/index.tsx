@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { Counter } from "components/common/Counter";
+import { TodosTable } from "components/home/TodosTable";
 import { Layout } from "components/layouts/Layout";
 import type { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -41,15 +42,11 @@ const Index = () => {
         url="https://pantelwar.com"
       />
       <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100%",
-        }}
+        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
       >
         <Counter />
       </Box>
+      <TodosTable />
     </Layout>
   );
 };

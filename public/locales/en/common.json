@@ -1,4 +1,8 @@
 {
   "Login": "Login",
-  "Logout": "Logout"
+  "Logout": "Logout",
+  "Todos": "Todos",
+  "ID": "ID",
+  "Title": "Title",
+  "Status": "Status"
 }

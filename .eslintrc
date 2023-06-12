@@ -78,7 +78,8 @@
             "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(error)$/]",
             "message": "Unexpected property on console object was called"
           }
-        ] // no console log/info/warning/etc
+        ], // no console log/info/warning/etc
+        "no-nested-ternary": "off" // to allow use of nested ternary expressions inside JSX
       }
     },
     // Configuration for testing

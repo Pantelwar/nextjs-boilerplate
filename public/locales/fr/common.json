@@ -1,4 +1,8 @@
 {
   "Login": "Connexion",
-  "Logout": "Déconnexion"
+  "Logout": "Déconnexion",
+  "Todos": "Todos",
+  "ID": "ID",
+  "Title": "Titre",
+  "Status": "Statut"
 }

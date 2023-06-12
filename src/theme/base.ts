@@ -109,6 +109,11 @@ const components: ThemeOptions["components"] = {
       },
     },
   },
+  MuiTableRow: {
+    defaultProps: {
+      hover: true,
+    },
+  },
 };
 
 const breakpoints: ThemeOptions["breakpoints"] = {
