@@ -9,7 +9,7 @@
     "export": "next export",
     "test": "jest",
     "format": "next lint --fix && prettier '**/*.{js,jsx,ts,tsx,json,yaml}' --write",
-    "check-types": "tsc --noEmit --pretty && tsc --project cypress --noEmit --pretty",
+    "check-types": "tsc --noEmit --pretty --project tsconfig.json",
     "build-stats": "cross-env ANALYZE=true npm run build",
     "build-prod": "run-s clean build export",
     "clean": "rimraf .next out",
