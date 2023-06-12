@@ -41,7 +41,7 @@ export const Toaster = () => {
             {type !== "loading" && (
               <IconButton
                 sx={{ color: "text.secondary" }}
-                onClick={() => toast.dismiss(id)}
+                onClick={() => toast.remove(id)}
               >
                 <Close fontSize="small" />
               </IconButton>
